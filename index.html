@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="hy">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HOME AM — Անշարժ գույքի հարթակ</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header"><a class="brand" href="#/">HOME <b>AM</b></a>
+<nav><a href="#/">Գլխավոր</a><a href="#/rent">Վարձակալություն</a><a href="#/sale">Վաճառք</a><a href="#/agents">Գործակալներ</a><button class="btn primary" data-open-add>+ Ավելացնել հայտարարություն</button></nav>
+</header>
+<section class="hero"><div class="hero-inner"><span class="eyebrow">HOME AM · ARMENIA REAL ESTATE</span><h1>Գտիր տունը հենց այն վայրում, որտեղ ուզում ես ապրել։</h1><p>Որոնիր բնակարաններ, տներ և կոմերցիոն տարածքներ՝ փողոցով, քարտեզով և քո պայմաններով։</p>
+<form id="searchForm" class="searchbar"><select id="sType"><option value="">Գործարքի տեսակ</option><option>Վարձակալություն</option><option>Վաճառք</option></select><input id="sPlace" placeholder="Քաղաք, փողոց կամ թաղամաս"><select id="sRooms"><option value="">Սենյակներ</option><option>1</option><option>2</option><option>3</option><option>4+</option></select><input id="sMax" type="number" placeholder="Մինչև՝ $"><button class="btn primary">Որոնել</button></form></div></section>
+<main><div class="section-head"><div><span class="eyebrow">DISCOVER</span><h2>Հայտարարություններ</h2></div><span id="resultCount" class="muted"></span></div>
+<div class="workspace"><section><div id="cards" class="cards"></div></section><aside class="map"><div class="mapgrid"></div><div class="map-title">Քարտեզ</div><div id="pins"></div></aside></div></main>
+<div id="modal" class="modal"><div class="modal-card"><button class="x" data-close>×</button><h2>Ավելացնել հայտարարություն</h2><form id="addForm" class="formgrid">
+<input name="title" class="full" placeholder="Վերնագիր" required><select name="type"><option>Վարձակալություն</option><option>Վաճառք</option></select><input name="price" type="number" placeholder="Գին ($)" required><input name="city" placeholder="Քաղաք" value="Երևան" required><input name="street" placeholder="Փողոց" required><input name="rooms" type="number" placeholder="Սենյակներ" required><input name="area" type="number" placeholder="Մակերես (մ²)" required><input name="photo" class="full" placeholder="Նկարի URL (ըստ ցանկության)"><textarea name="description" class="full" placeholder="Նկարագրություն"></textarea><button class="btn primary full">Հրապարակել</button></form></div></div>
+<script src="app.js"></script>
+</body></html>
